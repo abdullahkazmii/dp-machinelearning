@@ -24,4 +24,4 @@ with st.expander("Data Visualization"):
 with st.sidebar:
   st.header("Input Features")
   island = st.selectbox('island', ('Biscoe', 'Dream', 'Torgersen'))
-  gender = st.selectbox('sex', ('Male', "Female"))  
+  gender = st.selectbox('sex', ('male', "female"))  
