@@ -85,12 +85,11 @@ df_prediction_probab.rename(columns = {
   1: 'Chinstrap',
   2: 'Gentoo'
 })
-df_prediction_probab
-
-#prediction_probab
 
 #Display Predicted Species
 st.subheader('Predicted Species')
+df_prediction_probab
+
 penguins_species = np.array(['Adelie', 'Chinstrap', 'Gentoo'])
 st.success(str(penguins_species[prediction]))
 
