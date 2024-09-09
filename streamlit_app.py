@@ -14,6 +14,6 @@ with st.expander("Data"):
   X
   
   st.write("**Y**")
-  Y = df.species
+  Y = df[['species', 'sex']]
   Y
 
