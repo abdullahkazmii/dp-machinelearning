@@ -28,7 +28,7 @@ with st.sidebar:
   bill_depth_mm = st.slider('Bill Depth (mm)', 13.10, 21.50, 17.20)
   flipper_length_mm = st.slider('Flipper Length (mm)', 172.00, 231.00, 201.00)
   body_mass_g	= st.slider('Body Mass (g)', 2700.00, 6300.00, 4207.00)
-  gender = st.selectbox('Gender', ('male', 'female'))
+  sex = st.selectbox('Gender', ('male', 'female'))
 
 #Create a Dataframe for the input features
 data  = {
@@ -37,7 +37,7 @@ data  = {
   'bill_depth_mm': bill_depth_mm,
   'flipper_length_mm': flipper_length_mm,
   'body_mass_g': body_mass_g,
-  'gender': gender
+  'sex': sex
 }
 
 input_df = pd.DataFrame(data, index=[0])
