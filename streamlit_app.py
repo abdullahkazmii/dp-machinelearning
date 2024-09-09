@@ -19,4 +19,9 @@ with st.expander("Data"):
 
 with st.expander("Data Visualization"):
   st.scatter_chart(data = df, x='bill_length_mm', y = 'body_mass_g', color = 'species')
-  
+
+#Data Preperation 
+with st.sidebar:
+  st.header("Input Features")
+  island = st.selectbox('island', ('Biscoe', 'Dream', 'Torgersen'))
+  gender = st.selectbox('sex', ('Male', "Female"))  
