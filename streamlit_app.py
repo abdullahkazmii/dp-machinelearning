@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 st.title('🤖 Machine Learning App')
 
-st.danger("Abdullah's first Machine Learning App!")
+st.info("Abdullah's first Machine Learning App!")
 
 with st.expander("Data"):
   st.write("**Raw Data:**")
@@ -49,5 +49,8 @@ with st.expander('Input Features'):
   st.write("**Combined Penguins Data**")
   input_pen
 
-  
+#encode
+encode = ['island', 'sex']
+df_penguins = pd.get_dummies(input_penguins, prefix=encode)
+df_penguins[:1]
 
