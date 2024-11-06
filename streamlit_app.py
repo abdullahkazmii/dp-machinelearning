@@ -21,7 +21,7 @@ with st.expander("Data"):
   Y_raw
 
 with st.expander("Data Visualization"):
-  st.line_chart(data = df, x='bill_length_mm', y = 'body_mass_g', color = 'species')
+  st.bar_chart(data = df, x='bill_length_mm', y = 'body_mass_g', color = 'species')
 
 #Input Features 
 with st.sidebar:
